@@ -24,7 +24,7 @@
 
     <form>
       <fieldset>
-        <div class="fieldset-wrapper">
+        <div class="fieldset-wrapper fieldset-gap">
           <div class="box">
             <label for="first-name">Nome</label>
             <input type="text" id="your-name">
@@ -38,14 +38,39 @@
         
         <div class="fieldset-wrapper">
           <div class="box">
-            <label for="email">Email <span>(digite um email válido)</span></label>
+            <label for="email">Email<span>(digite um email válido)</span></label>
             <input type="text" id="email">
           </div>
         </div>
       </fieldset>
 
       <fieldset>
-        
+        <div class="fieldset-wrapper">
+          <h2>Informações do mentor</h2>
+        </div>
+
+        <hr>
+
+        <div class="fielset-wrapper">
+          <label class="default-letter" for="mentor-selection">Selecione quem foi o seu mentor</label>
+          <select class="default-letter box-size" id="mentor-selection">
+            <option value="">João</option>
+            <option value="">Malu</option>
+            <option value="">Gustavo</option>
+            <option value="">Jhonathan</option>
+          </select>
+        </div>
+
+        <div class=" fieldset-wrapper wrapper">
+          <label for="mentor-feedback">Feedback sobre o mentor</label>
+            <textarea id="mentor-feedback"></textarea>
+        </div>
+
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="check-mentor" class="check">
+          <label for="check-mentor">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+        </div>
+
       </fieldset>
 
     </form>
